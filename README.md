@@ -3,6 +3,12 @@
 ## Thimble Hand Turkey Project
 As a fun holiday-themed activity, we took a break in the office to draw grade-school-style hand-turkeys. This project is the result. Feel free to duplicate our work and have some fun making your own!
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/eyi7aPUleB0/0.jpg)](http://www.youtube.com/watch?v=eyi7aPUleB0)
+
+### Instructions
+
+NOTE: There are slightly more detailed instructions on our [blog](https://blog.thimble.io/happy-thanksgiving-from-thimble-98a42b42d3b0). If you get stuck, ask on our [forums](https://learning.thimble.io/forum/t/happy-thanksgiving/) or send us an email.
+
 Start by printing out the [template PDF file](drawPage.pdf). Then, trace your hand.
 
 ![Trace your hand](hand_tracing.jpg)
