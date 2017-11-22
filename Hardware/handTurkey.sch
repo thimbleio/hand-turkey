@@ -1,0 +1,582 @@
+EESchema Schematic File Version 2
+LIBS:handTurkey-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:turkey
+LIBS:switches
+LIBS:handTurkey-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 5906 6299
+encoding utf-8
+Sheet 1 1
+Title "Hand turkey LED 2 Channel Circuit"
+Date "2017-11-09"
+Rev "v0.1"
+Comp "Thimble.io"
+Comment1 "David Dressner"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4060 U1
+U 1 1 5A04BDAC
+P 1950 2050
+F 0 "U1" H 2650 2700 60  0000 C CNN
+F 1 "4060" H 2625 1475 60  0000 C CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm" H 2925 2250 60  0001 C CNN
+F 3 "" H 2925 2250 60  0001 C CNN
+	1    1950 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT1
+U 1 1 5A04BDF1
+P 1275 2325
+F 0 "BT1" H 1375 2425 50  0000 L CNN
+F 1 "Battery" H 1375 2325 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" V 1275 2385 50  0001 C CNN
+F 3 "" V 1275 2385 50  0001 C CNN
+	1    1275 2325
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5A04BE24
+P 1275 2625
+F 0 "#PWR01" H 1275 2375 50  0001 C CNN
+F 1 "GND" H 1275 2475 50  0000 C CNN
+F 2 "" H 1275 2625 50  0001 C CNN
+F 3 "" H 1275 2625 50  0001 C CNN
+	1    1275 2625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1275 2525 1275 2625
+$Comp
+L VDD #PWR02
+U 1 1 5A04BE61
+P 1175 1475
+F 0 "#PWR02" H 1175 1325 50  0001 C CNN
+F 1 "VDD" H 1175 1625 50  0000 C CNN
+F 2 "" H 1175 1475 50  0001 C CNN
+F 3 "" H 1175 1475 50  0001 C CNN
+	1    1175 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1275 1950 1275 2125
+$Comp
+L VDD #PWR03
+U 1 1 5A04BEB6
+P 2425 1150
+F 0 "#PWR03" H 2425 1000 50  0001 C CNN
+F 1 "VDD" H 2425 1300 50  0000 C CNN
+F 2 "" H 2425 1150 50  0001 C CNN
+F 3 "" H 2425 1150 50  0001 C CNN
+	1    2425 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2425 1150 2425 1250
+$Comp
+L GND #PWR04
+U 1 1 5A04BF9C
+P 2500 2850
+F 0 "#PWR04" H 2500 2600 50  0001 C CNN
+F 1 "GND" H 2500 2700 50  0000 C CNN
+F 2 "" H 2500 2850 50  0001 C CNN
+F 3 "" H 2500 2850 50  0001 C CNN
+	1    2500 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2750 2500 2850
+Wire Wire Line
+	2900 2250 3250 2250
+Wire Wire Line
+	2900 2350 3250 2350
+$Comp
+L CONN_01X10 J1
+U 1 1 5A04C0F7
+P 3450 2000
+F 0 "J1" H 3450 2550 50  0000 C CNN
+F 1 "CONN_01X10" V 3550 2000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 3450 2000 50  0001 C CNN
+F 3 "" H 3450 2000 50  0001 C CNN
+	1    3450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1550 3250 1550
+Wire Wire Line
+	2900 1650 3250 1650
+Wire Wire Line
+	2900 1750 3250 1750
+Wire Wire Line
+	2900 1850 3250 1850
+Wire Wire Line
+	2900 1950 3250 1950
+Wire Wire Line
+	2900 2050 3250 2050
+Wire Wire Line
+	2900 2150 3250 2150
+Wire Wire Line
+	3250 2450 2900 2450
+Wire Wire Line
+	2975 2825 2975 3650
+Connection ~ 2975 2350
+Wire Wire Line
+	3075 2700 3075 3450
+Connection ~ 3075 2250
+Text Label 2950 1550 1    60   ~ 0
+Q14
+Text Label 3050 1650 1    60   ~ 0
+Q13
+Text Label 3150 1750 1    60   ~ 0
+Q12
+Text Label 3250 1850 1    60   ~ 0
+Q10
+Text Label 2950 1950 1    60   ~ 0
+Q9
+Text Label 3050 2050 1    60   ~ 0
+Q8
+Text Label 3150 2150 1    60   ~ 0
+Q7
+Text Label 3250 2250 1    60   ~ 0
+Q6
+Text Label 2975 2350 1    60   ~ 0
+Q5
+Text Label 3050 2450 1    60   ~ 0
+Q4
+Wire Wire Line
+	1625 2125 2150 2125
+$Comp
+L C_Small C1
+U 1 1 5A04C32B
+P 1900 2025
+F 0 "C1" H 1910 2095 50  0000 L CNN
+F 1 "0.22uF" H 1910 1945 50  0000 L CNN
+F 2 "Capacitors_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 1900 2025 50  0001 C CNN
+F 3 "" H 1900 2025 50  0001 C CNN
+	1    1900 2025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 1825 2150 1825
+$Comp
+L R_Small R1
+U 1 1 5A04C391
+P 2000 1725
+F 0 "R1" V 1925 1675 50  0000 L CNN
+F 1 "100K" V 2075 1625 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2000 1725 50  0001 C CNN
+F 3 "" H 2000 1725 50  0001 C CNN
+	1    2000 1725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2100 1725 2150 1725
+$Comp
+L GND #PWR05
+U 1 1 5A04C50F
+P 2150 2400
+F 0 "#PWR05" H 2150 2150 50  0001 C CNN
+F 1 "GND" H 2150 2250 50  0000 C CNN
+F 2 "" H 2150 2400 50  0001 C CNN
+F 3 "" H 2150 2400 50  0001 C CNN
+	1    2150 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2400 2150 2325
+$Comp
+L LED_Small D3
+U 1 1 5A04C5CA
+P 3575 2925
+F 0 "D3" V 3350 2875 50  0000 L CNN
+F 1 "LED" V 3800 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3575 2925 50  0001 C CNN
+F 3 "" V 3575 2925 50  0001 C CNN
+	1    3575 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D4
+U 1 1 5A04C6DE
+P 3725 2925
+F 0 "D4" V 3500 2850 50  0000 L CNN
+F 1 "LED" V 3950 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3725 2925 50  0001 C CNN
+F 3 "" V 3725 2925 50  0001 C CNN
+	1    3725 2925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D1
+U 1 1 5A04C89F
+P 3250 2925
+F 0 "D1" V 3025 2875 50  0000 L CNN
+F 1 "LED" V 3475 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3250 2925 50  0001 C CNN
+F 3 "" V 3250 2925 50  0001 C CNN
+	1    3250 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D2
+U 1 1 5A04C8A5
+P 3400 2925
+F 0 "D2" V 3175 2850 50  0000 L CNN
+F 1 "LED" V 3625 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3400 2925 50  0001 C CNN
+F 3 "" V 3400 2925 50  0001 C CNN
+	1    3400 2925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D7
+U 1 1 5A04C97F
+P 4225 2925
+F 0 "D7" V 4000 2875 50  0000 L CNN
+F 1 "LED" V 4450 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4225 2925 50  0001 C CNN
+F 3 "" V 4225 2925 50  0001 C CNN
+	1    4225 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D8
+U 1 1 5A04C985
+P 4375 2925
+F 0 "D8" V 4150 2850 50  0000 L CNN
+F 1 "LED" V 4600 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4375 2925 50  0001 C CNN
+F 3 "" V 4375 2925 50  0001 C CNN
+	1    4375 2925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D5
+U 1 1 5A04C98B
+P 3900 2925
+F 0 "D5" V 3675 2875 50  0000 L CNN
+F 1 "LED" V 4125 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3900 2925 50  0001 C CNN
+F 3 "" V 3900 2925 50  0001 C CNN
+	1    3900 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D6
+U 1 1 5A04C991
+P 4050 2925
+F 0 "D6" V 3825 2850 50  0000 L CNN
+F 1 "LED" V 4275 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4050 2925 50  0001 C CNN
+F 3 "" V 4050 2925 50  0001 C CNN
+	1    4050 2925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D9
+U 1 1 5A04C9D7
+P 4550 2925
+F 0 "D9" V 4325 2875 50  0000 L CNN
+F 1 "LED" V 4775 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4550 2925 50  0001 C CNN
+F 3 "" V 4550 2925 50  0001 C CNN
+	1    4550 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D10
+U 1 1 5A04C9DD
+P 4700 2925
+F 0 "D10" V 4475 2850 50  0000 L CNN
+F 1 "LED" V 4925 2850 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4700 2925 50  0001 C CNN
+F 3 "" V 4700 2925 50  0001 C CNN
+	1    4700 2925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D13
+U 1 1 5A04CA97
+P 3575 3550
+F 0 "D13" V 3350 3500 50  0000 L CNN
+F 1 "LED" V 3800 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3575 3550 50  0001 C CNN
+F 3 "" V 3575 3550 50  0001 C CNN
+	1    3575 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D14
+U 1 1 5A04CA9D
+P 3725 3550
+F 0 "D14" V 3500 3475 50  0000 L CNN
+F 1 "LED" V 3950 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3725 3550 50  0001 C CNN
+F 3 "" V 3725 3550 50  0001 C CNN
+	1    3725 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D11
+U 1 1 5A04CAA3
+P 3250 3550
+F 0 "D11" V 3025 3500 50  0000 L CNN
+F 1 "LED" V 3475 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3250 3550 50  0001 C CNN
+F 3 "" V 3250 3550 50  0001 C CNN
+	1    3250 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D12
+U 1 1 5A04CAA9
+P 3400 3550
+F 0 "D12" V 3175 3475 50  0000 L CNN
+F 1 "LED" V 3625 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3400 3550 50  0001 C CNN
+F 3 "" V 3400 3550 50  0001 C CNN
+	1    3400 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D17
+U 1 1 5A04CAAF
+P 4225 3550
+F 0 "D17" V 4000 3500 50  0000 L CNN
+F 1 "LED" V 4450 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4225 3550 50  0001 C CNN
+F 3 "" V 4225 3550 50  0001 C CNN
+	1    4225 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D18
+U 1 1 5A04CAB5
+P 4375 3550
+F 0 "D18" V 4150 3475 50  0000 L CNN
+F 1 "LED" V 4600 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4375 3550 50  0001 C CNN
+F 3 "" V 4375 3550 50  0001 C CNN
+	1    4375 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D15
+U 1 1 5A04CABB
+P 3900 3550
+F 0 "D15" V 3675 3500 50  0000 L CNN
+F 1 "LED" V 4125 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 3900 3550 50  0001 C CNN
+F 3 "" V 3900 3550 50  0001 C CNN
+	1    3900 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D16
+U 1 1 5A04CAC1
+P 4050 3550
+F 0 "D16" V 3825 3475 50  0000 L CNN
+F 1 "LED" V 4275 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4050 3550 50  0001 C CNN
+F 3 "" V 4050 3550 50  0001 C CNN
+	1    4050 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED_Small D19
+U 1 1 5A04CAC7
+P 4550 3550
+F 0 "D19" V 4325 3500 50  0000 L CNN
+F 1 "LED" V 4775 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4550 3550 50  0001 C CNN
+F 3 "" V 4550 3550 50  0001 C CNN
+	1    4550 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L LED_Small D20
+U 1 1 5A04CACD
+P 4700 3550
+F 0 "D20" V 4475 3475 50  0000 L CNN
+F 1 "LED" V 4925 3475 50  0000 L CNN
+F 2 "LEDs:LED_D5.0mm" V 4700 3550 50  0001 C CNN
+F 3 "" V 4700 3550 50  0001 C CNN
+	1    4700 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3075 2825 4700 2825
+Connection ~ 3250 2825
+Connection ~ 3400 2825
+Connection ~ 3575 2825
+Wire Wire Line
+	2975 3025 4700 3025
+Connection ~ 3250 3025
+Connection ~ 3400 3025
+Connection ~ 3575 3025
+Connection ~ 3725 2825
+Connection ~ 3725 3025
+Connection ~ 3900 2825
+Connection ~ 3900 3025
+Connection ~ 4050 2825
+Connection ~ 4050 3025
+Connection ~ 4225 2825
+Connection ~ 4225 3025
+Connection ~ 4375 2825
+Connection ~ 4375 3025
+Connection ~ 4550 2825
+Connection ~ 4550 3025
+Connection ~ 3075 2825
+Connection ~ 2975 3025
+Wire Wire Line
+	2975 3650 4700 3650
+Wire Wire Line
+	3075 3450 4700 3450
+Connection ~ 3250 3450
+Connection ~ 3250 3650
+Connection ~ 3400 3450
+Connection ~ 3400 3650
+Connection ~ 3575 3450
+Connection ~ 3575 3650
+Connection ~ 3725 3450
+Connection ~ 3725 3650
+Connection ~ 3900 3450
+Connection ~ 3900 3650
+Connection ~ 4050 3450
+Connection ~ 4050 3650
+Connection ~ 4225 3450
+Connection ~ 4225 3650
+Connection ~ 4375 3450
+Connection ~ 4375 3650
+Connection ~ 4550 3450
+Connection ~ 4550 3650
+$Comp
+L SW_DPDT_x2-RESCUE-handTurkey SW1
+U 1 1 5A04E069
+P 1275 1750
+F 0 "SW1" H 1275 1920 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 1275 1550 50  0000 C CNN
+F 2 "thimble_footprint_lbrary:slideJS" H 1275 1750 50  0001 C CNN
+F 3 "" H 1275 1750 50  0001 C CNN
+	1    1275 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1175 1475 1175 1550
+NoConn ~ 1375 1550
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 5A04F443
+P 825 4700
+F 0 "#FLG06" H 825 4775 50  0001 C CNN
+F 1 "PWR_FLAG" H 825 4850 50  0000 C CNN
+F 2 "" H 825 4700 50  0001 C CNN
+F 3 "" H 825 4700 50  0001 C CNN
+	1    825  4700
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 5A04F4A3
+P 825 5175
+F 0 "#FLG07" H 825 5250 50  0001 C CNN
+F 1 "PWR_FLAG" H 825 5325 50  0000 C CNN
+F 2 "" H 825 5175 50  0001 C CNN
+F 3 "" H 825 5175 50  0001 C CNN
+	1    825  5175
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 5A04F564
+P 825 5300
+F 0 "#PWR08" H 825 5050 50  0001 C CNN
+F 1 "GND" H 825 5150 50  0000 C CNN
+F 2 "" H 825 5300 50  0001 C CNN
+F 3 "" H 825 5300 50  0001 C CNN
+	1    825  5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	825  5175 825  5300
+$Comp
+L VDD #PWR09
+U 1 1 5A04F8F4
+P 825 4550
+F 0 "#PWR09" H 825 4400 50  0001 C CNN
+F 1 "VDD" H 825 4700 50  0000 C CNN
+F 2 "" H 825 4550 50  0001 C CNN
+F 3 "" H 825 4550 50  0001 C CNN
+	1    825  4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	825  4550 825  4700
+$Comp
+L Jumper_NC_Small JP1
+U 1 1 5A04DCCB
+P 3075 2600
+F 0 "JP1" H 3075 2680 50  0000 C CNN
+F 1 "Q4 Jump" V 3300 2300 50  0000 C CNN
+F 2 "thimble_footprint_lbrary:jumper" H 3075 2600 50  0001 C CNN
+F 3 "" H 3075 2600 50  0001 C CNN
+	1    3075 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper_NC_Small JP2
+U 1 1 5A04E028
+P 2975 2725
+F 0 "JP2" H 2975 2805 50  0000 C CNN
+F 1 "Q5 Jump" V 3125 2350 50  0000 C CNN
+F 2 "thimble_footprint_lbrary:jumper" H 2975 2725 50  0001 C CNN
+F 3 "" H 2975 2725 50  0001 C CNN
+	1    2975 2725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2975 2625 2975 2350
+Wire Wire Line
+	3075 2500 3075 2250
+Wire Wire Line
+	1900 1825 1900 1925
+Wire Wire Line
+	1625 2125 1625 1725
+Wire Wire Line
+	1625 1725 1900 1725
+Connection ~ 1900 2125
+$EndSCHEMATC
